@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/book_background">
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de creacion de usuario"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+        <EditText
+            android:id="@+id/edtuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su usuario"
+            android:textColorHint="@color/black"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/edtnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su nombre"
+            android:textColorHint="@color/black"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/edtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su contraseña"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            android:textSize="17sp"/>
+
+        <Spinner
+            android:id="@+id/spSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Selecciona Genero"
+            android:minHeight="48dp"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="clickagregar"
+        android:text="Agregar"
+        android:textSize="12dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="-220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:onClick="clickeliminar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text= "Eliminar"
+        android:textSize="12dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:onClick="clickmodificar"
+        android:text= "Modificar"
+        android:textSize="12dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ListView
+        android:id="@+id/Lista"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/book_background">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Solicitudes"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:hint="Ingrese su usuario"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPersonName"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:hint="Ingrese su solicitud"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25sp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Estas seguro de enviar esta solicitud?" />
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="tabla de solicitudes"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textColor="@color/black"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="usuario"
+                        android:textSize="25sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:text="solicitud"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:text="R.alne"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:text="Quisiera que agregaran un sistema de puntos"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:text="BeN.solO"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="267dp"
+                        android:layout_height="30dp"
+                        android:text="Quisiera que agregaran un boton de retroceso en los layouts"
+                        android:textSize="18sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:onClick="acceso_Principal"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Enviar"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#008080"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:onClick="onClickaccesoCrud"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Editar"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#ED0B0B"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

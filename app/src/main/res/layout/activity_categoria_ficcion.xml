@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/book_background">
+
+    <!--este sera el contenedor principal (1984)-->
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Ficcion"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--este sera el contenedor de la carta-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--aqui se define la imagen, rating y titulo-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/img_book_1984" />
+
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:numStars="5"
+                    android:scaleX="1"
+                    android:scaleY="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="12sp"
+                    android:text="Titulo: 1984 \nEscritor: George Orwel" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!--este sera el contenedor principal (i am legend)-->
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--este sera el contenedor de la carta-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--aqui se define la imagen, rating y titulo-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/img_book_iamlegend" />
+
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:numStars="5"
+                    android:scaleX="1"
+                    android:scaleY="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="12sp"
+                    android:text="Titulo: Soy Leyenda \nEscritor: Richard Matheson" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!--este sera el contenedor principal (dune)-->
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="40dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--este sera el contenedor de la carta-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--aqui se define la imagen, rating y titulo-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/img_book_dune" />
+
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:numStars="5"
+                    android:scaleX="1"
+                    android:scaleY="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="12sp"
+                    android:text="Titulo: Dune \nEscritor: Frank Herbert" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!--este sera el contenedor principal (themarcians)-->
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--este sera el contenedor de la carta-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--aqui se define la imagen, rating y titulo-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/img_book_themarcian" />
+
+                <RatingBar
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:numStars="5"
+                    android:scaleX="1"
+                    android:scaleY="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="12sp"
+                    android:text="Titulo: El Marciano\nEscritor: Andy Weir" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/solicitud"
+        android:onClick="accesoSolicitud"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
